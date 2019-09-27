@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Particle.js</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    </head>
+    
+    
+    <script type="text/javascript">
+        function searchit(){
+            document.getElementById("hp").href=(("https://www.startpage.com/do/search?q=")+ (document.getElementById("linkit").value));
+            
+        }
+        
+    </script>
+    <body>
+        <div class="container">
+            <div class= "text middle" data-text="Space Particles"> Space Particles 
+        </div>
+        
+        </div>
+        
+        <div class="search-box">
+            <input type="search" id="linkit" class="search-txt" placeholder="Type to search"/>
+            <a class="search-btn" href="" id="hp" onclick="searchit()">
+            <i class="fas fa-search"></i>
+        </a>
+     </div>
+        
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        
+    </body>
+</html>
